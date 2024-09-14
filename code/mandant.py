@@ -18,7 +18,7 @@ class Mandant():
 
         self.tabelle_struktur = {'mandantIR':int, 'beschreibung':str}
 
-    def pruefeMantant(self, mandantID: int):
+    def pruefeMandant(self, mandantID: int):
         datei = self.tabelle
         struktur = self.tabelle_struktur
 
@@ -35,3 +35,5 @@ class Mandant():
             beschreibung = df1.iloc[0].beschreibung
             text = f'Mandant/pruefeMantant: wunderbar! Zu mandantID={mandantID} gehört Beschreibung={beschreibung}'
             print(text)
+
+        return text

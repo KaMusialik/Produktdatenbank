@@ -11,7 +11,7 @@ if __name__ == "__main__":
     vpdID = 1
 
     omandant = mandant.Mandant(files_dict)
-    omandant.pruefeMantant(mandantID)
+    omandant.pruefeMandant(mandantID)
 
     overkaufsprodukt = verkaufsprodukt.Verkaufsprodukt(files_dict)
     myDict = overkaufsprodukt.leseVerkaufsprodukt(vpdID, mandantID)
