@@ -10,16 +10,16 @@ class Verkaufsprodukt():
         self.tabelle = work_dir + 'verkaufsprodukt.csv'
         datei = Path(self.tabelle)
         if datei.is_file():
-            text = 'Verkaufsprodukt/init: Die Datei ' + self.tabelle+ ' existiert. Also alles okay. Es geht weiter'
+            text = 'Verkaufsprodukt/init: Die Datei ' + self.tabelle + ' existiert. Also alles okay. Es geht weiter'
             print(text)
         else:
             text = 'Verkaufsprodukt/init: Die Datei ' + self.tabelle + ' existiert nicht! Ups! Baustelle!'
             print(text)
 
-        self.tabelle_struktur = {'vpdID':int, 'mandantIR':int, 'name':str, 'von':int, 'bis':int, 'pdID':int}
+        self.tabelle_struktur = {'vpdID': int, 'mandantIR': int, 'name': str, 'von': int, 'bis': int, 'pdID': int}
 
 
-    def leseVerkaufsprodukt(self, vpdID, mandantID):
+    def leseVerkaufsprodukt(self, vpdID: int, mandantID: int):
         datei = self.tabelle
         struktur = self.tabelle_struktur
 

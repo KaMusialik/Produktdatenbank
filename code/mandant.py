@@ -18,7 +18,7 @@ class Mandant():
 
         self.tabelle_struktur = {'mandantIR':int, 'beschreibung':str}
 
-    def pruefeMantant(self, mandantID):
+    def pruefeMantant(self, mandantID: int):
         datei = self.tabelle
         struktur = self.tabelle_struktur
 
